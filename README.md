@@ -22,7 +22,7 @@ Add the following to your project's `composer.json`:
 "repositories": [
     {
         "type": "vcs",
-        "url": "git@code.nettantra.com:skniyaz.noor/form-builder-package.git"
+        "url": "git@github.com:dev-skjena/filament-quick-form.git"
     }
 ]
 ```
