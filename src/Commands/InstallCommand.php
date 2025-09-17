@@ -1,0 +1,25 @@
+<?php
+
+namespace Quickform\Formbuilder\Commands;
+
+use Illuminate\Console\Command;
+
+class InstallCommand extends Command
+{
+    protected $signature = 'quickform:install';
+
+    protected $description = 'install quickform';
+
+    public function handle(): void
+    {
+        $this->info('publishing migrations...');
+        $this->call('vendor:publish', ['--tag' => 'formbuilder-migrations']);
+
+        if ($this->confirm('Do you want to run the migration now?', true)) {
+            $this->info('running migrations...');
+            $this->call('migrate');
+        }
+
+        $this->output->success('Quick Form has been Installed successfully, ⭐️');
+    }
+}

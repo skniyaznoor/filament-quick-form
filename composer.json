@@ -1,0 +1,23 @@
+{
+    "name": "quickform/formbuilder",
+    "description": "create customize forms with different fields",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Quickform\\Formbuilder\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quickform\\Formbuilder\\FormBuilderServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "filament/filament": "^3.2",
+        "bensampo/laravel-enum": "^6.11",
+        "quickform/formbuilder": "dev-master"
+    }
+}
