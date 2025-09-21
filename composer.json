@@ -17,7 +17,6 @@
     },
     "require": {
        "filament/filament": "^3.2|^4.0",
-        "bensampo/laravel-enum": "^6.11",
-        "quickform/formbuilder": "dev-master"
+        "bensampo/laravel-enum": "^6.11"
     }
 }
