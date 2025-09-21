@@ -16,7 +16,7 @@
         }
     },
     "require": {
-       "filament/filament": "^3.2|^4.0",
+       "filament/filament": "^4.0",
         "bensampo/laravel-enum": "^6.11"
     }
 }
