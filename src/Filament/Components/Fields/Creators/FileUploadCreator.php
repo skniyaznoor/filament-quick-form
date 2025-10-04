@@ -24,7 +24,7 @@ class FileUploadCreator
             ->openable()
             ->default($field['default_value'])
             ->afterStateUpdated(function ($component, $state) {
-                $component->fill();
+                // $component->fill();
                 $component->state($state);
             })
         ;

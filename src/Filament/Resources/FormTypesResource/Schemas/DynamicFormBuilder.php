@@ -42,10 +42,10 @@ class DynamicFormBuilder
                     
                     $field = FieldCreatorFactory::createField($fieldData)
                         ->name($columnName)
-                        ->statePath($columnName)  
+                        ->statePath('fields.' . $columnName)
                         ->reactive()
                         ->afterStateUpdated(function ($component, $state) {
-                            $component->fill();
+                            // $component->fill();
                             $component->state($state);
                         });
 
