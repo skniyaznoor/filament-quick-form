@@ -2,10 +2,8 @@
 
 namespace FilamentQuickForm\FormBuilder;
 
-use Filament\Facades\Filament;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use Filament\PanelProvider;
 use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource;
 
 class FormBuilderPlugin implements Plugin
