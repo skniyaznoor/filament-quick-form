@@ -13,7 +13,7 @@ class InstallCommand extends Command
     public function handle(): void
     {
         $this->info('publishing migrations...');
-        $this->call('vendor:publish', ['--tag' => 'formbuilder-migrations']);
+        $this->call('vendor:publish', ['--tag' => 'form-builder-migrations']);
 
         if ($this->confirm('Do you want to run the migration now?', true)) {
             $this->info('running migrations...');
