@@ -1,8 +1,8 @@
 <?php
 
-namespace Quickform\Formbuilder\Filament\Components\Fields;
+namespace FilamentQuickForm\FormBuilder\Filament\Components\Fields;
 
-use Quickform\Formbuilder\Filament\Components\Fields\Creators\{
+use FilamentQuickForm\FormBuilder\Filament\Components\Fields\Creators\{
     TextInputCreator,
     SelectCreator,
     RadioCreator,
@@ -20,7 +20,7 @@ use Illuminate\Support\Str;
 use Filament\Forms\Set;
 use Filament\Forms;
 use Illuminate\Support\Facades\Log;
-use Quickform\Formbuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
 
 class FieldCreatorFactory
 {

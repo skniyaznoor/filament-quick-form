@@ -1,9 +1,9 @@
 <?php
 
-namespace Quickform\Formbuilder;
+namespace FilamentQuickForm\FormBuilder;
 
 use Illuminate\Support\ServiceProvider;
-use Quickform\Formbuilder\Commands\InstallCommand;
+use FilamentQuickForm\FormBuilder\Commands\InstallCommand;
 
 class FormBuilderServiceProvider extends ServiceProvider
 {
@@ -13,7 +13,7 @@ class FormBuilderServiceProvider extends ServiceProvider
             InstallCommand::class,
         ]);
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/quickform.php',
+            __DIR__ . '/../config/filament-quick-form.php',
             'quick_form'
         );
     }
@@ -25,14 +25,14 @@ class FormBuilderServiceProvider extends ServiceProvider
             __DIR__ . '/../database/migrations' => database_path('migrations'),
         ], 'formbuilder-migrations');
         $this->publishes([
-            __DIR__ . '/../config/quickform.php' => config_path('quickform.php'),
+            __DIR__ . '/../config/filament-quick-form.php' => config_path('filament-quick-form.php'),
         ], 'config');
         $this->loadTranslationsFrom(
             __DIR__.'/../resources/lang', 
-            'quickform' 
+            'filament-quick-form' 
         );
         $this->publishes([
             __DIR__.'/../resources/lang' => resource_path('lang'),
-        ], 'quickform-translations');
+        ], 'filament-quick-form-translations');
     }
 }

@@ -1,10 +1,10 @@
 <?php
-namespace Quickform\Formbuilder\Filament\Resources;
+namespace FilamentQuickForm\FormBuilder\Filament\Resources;
 
-use Quickform\Formbuilder\Filament\Resources\FormTypesResource\Pages;
-use Quickform\Formbuilder\Filament\Resources\FormTypesResource\Schemas\FormTypesForm;
-use Quickform\Formbuilder\Filament\Resources\FormTypesResource\Tables\FormTypesTable;
-use Quickform\Formbuilder\Models\FormTypes;
+use QuickForm\FormBuilder\Filament\Resources\FormTypesResource\Pages;
+use QuickForm\FormBuilder\Filament\Resources\FormTypesResource\Schemas\FormTypesForm;
+use QuickForm\FormBuilder\Filament\Resources\FormTypesResource\Tables\FormTypesTable;
+use QuickForm\FormBuilder\Models\FormTypes;
 use Filament\Resources\Resource;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Config;
@@ -18,12 +18,12 @@ class FormTypesResource extends Resource
     
     public static function getLabel(): string
     {
-        return __('quickform::formbuilder-quickform.config.resources.form_type.label');
+        return __('filament-quick-form::formbuilder-filament-quick-form.config.resources.form_type.label');
     }
     
     public static function getPluralLabel(): string
     {
-        return __('quickform::formbuilder-quickform.config.resources.form_type.plural_label');
+        return __('filament-quick-form::formbuilder-filament-quick-form.config.resources.form_type.plural_label');
     }
     
     public static function form(Schema $schema): Schema

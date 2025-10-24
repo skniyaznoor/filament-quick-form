@@ -1,6 +1,6 @@
 <?php
 
-namespace Quickform\Formbuilder\Filament\Components\Fields\Creators;
+namespace FilamentQuickForm\Formbuilder\Filament\Components\Fields\Creators;
 
 use Filament\Forms;
 
