@@ -1,17 +1,17 @@
 {
-    "name": "quickform/formbuilder",
+    "name": "filament-quick-form/formbuilder",
     "description": "create customize forms with different fields",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Quickform\\Formbuilder\\": "src/"
+            "FilamentQuickform\\Formbuilder\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Quickform\\Formbuilder\\FormBuilderServiceProvider"
+                "FilamentQuickform\\Formbuilder\\FormBuilderServiceProvider"
             ]
         }
     },

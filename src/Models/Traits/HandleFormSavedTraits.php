@@ -1,10 +1,10 @@
 <?php
 
-namespace Quickform\Formbuilder\Models\Traits;
+namespace FilamentQuickForm\FormBuilder\Models\Traits;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use Quickform\Formbuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
 
 trait HandleFormSavedTraits
 {

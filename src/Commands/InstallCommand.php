@@ -1,14 +1,14 @@
 <?php
 
-namespace Quickform\Formbuilder\Commands;
+namespace FilamentQuickForm\FormBuilder\Commands;
 
 use Illuminate\Console\Command;
 
 class InstallCommand extends Command
 {
-    protected $signature = 'quickform:install';
+    protected $signature = 'filament-quick-form:install';
 
-    protected $description = 'install quickform';
+    protected $description = 'install filament-quick-form';
 
     public function handle(): void
     {

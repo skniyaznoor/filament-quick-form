@@ -1,6 +1,6 @@
 <?php
 
-namespace Quickform\Formbuilder\Jobs;
+namespace FilamentQuickForm\FormBuilder\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -9,7 +9,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use Quickform\Formbuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
 use Illuminate\Support\Facades\Schema;
 
 class ProcessFormDataInsertion implements ShouldQueue

@@ -1,6 +1,6 @@
 <?php
 
-namespace Quickform\Formbuilder\Models;
+namespace FilamentQuickForm\FormBuilder\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Schema\Blueprint;
-use Quickform\Formbuilder\Jobs\ProcessFormDataInsertion;
-use Quickform\Formbuilder\Enum\FieldType;
+use FilamentQuickForm\FormBuilder\Jobs\ProcessFormDataInsertion;
+use FilamentQuickForm\FormBuilder\Enum\FieldType;
 use Illuminate\Support\Facades\Config;
 
 class FormTypes extends Model
@@ -34,7 +34,7 @@ class FormTypes extends Model
 
     public function getResourceMapping()
     {
-        $mappingToDynamic = Config::get('quickform.resource_mappings', []);
+        $mappingToDynamic = Config::get('filament-quick-form.resource_mappings', []);
         return $mappingToDynamic[$this->slug] ?? null;
     }
 

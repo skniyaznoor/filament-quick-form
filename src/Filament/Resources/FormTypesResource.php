@@ -1,10 +1,10 @@
 <?php
 
-namespace Quickform\Formbuilder\Filament\Resources;
+namespace FilamentQuickForm\FormBuilder\Filament\Resources;
 
-use Quickform\Formbuilder\Filament\Resources\FormTypesResource\Pages;
-use Quickform\Formbuilder\Filament\Resources\FormTypesResource\RelationManagers;
-use Quickform\Formbuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\Pages;
+use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\RelationManagers;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -18,12 +18,12 @@ use Illuminate\Support\Facades\Hash;
 use Filament\Forms\Components\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Forms\Components\{Wizard, KeyValue, TimePicker, DateTimePicker, DatePicker, Section, Tabs, Button, Modal, Card, TextInput, Textarea, Radio, Repeater, Toggle, Select, Fieldset, Hidden};
-use Quickform\Formbuilder\Filament\Pages\Settings;
+use FilamentQuickForm\FormBuilder\Filament\Pages\Settings;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Filament\Forms\Set;
 use Filament\Forms\Contracts\HasForms;
-use Quickform\Formbuilder\Enum\FieldType;
+use FilamentQuickForm\FormBuilder\Enum\FieldType;
 use Filament\Support\Enums\Alignment;
 use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Support\Facades\Config;
@@ -36,17 +36,17 @@ class FormTypesResource extends Resource
 
     public static function getLabel(): string
     {
-        return __('quickform::formbuilder-quickform.config.resources.form_type.label');
+        return __('filament-quick-form::formbuilder-filament-quick-form.config.resources.form_type.label');
     }
 
     public static function getPluralLabel(): string
     {
-        return __('quickform::formbuilder-quickform.config.resources.form_type.plural_label');
+        return __('filament-quick-form::formbuilder-filament-quick-form.config.resources.form_type.plural_label');
     }
 
     public static function getDefaultColor(): string
     {
-        return Config::get('quickform.default_color', 'warning');
+        return Config::get('filament-quick-form.default_color', 'warning');
     }
 
     public static function form(Form $form): Form

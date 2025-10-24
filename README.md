@@ -90,7 +90,7 @@ This configuration setup allows you to:
 Add the FormBuilder plugin to your Filament AdminPanelProvider:
 
 ```php
-use Quickform\Formbuilder\FormBuilderPlugin;
+use FilamentQuickForm\FormBuilder\FormBuilderPlugin;
 
 public function panel(Panel $panel): Panel
 {
@@ -128,8 +128,8 @@ The `HandleFormSavedTraits` is a crucial trait for dynamic form handling:
    * Uses database transactions for data integrity
 
 ```php
-use Quickform\Formbuilder\Models\FormTypes;
-use Quickform\Formbuilder\Models\Traits\HandleFormSavedTraits;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Models\Traits\HandleFormSavedTraits;
 
 
 class YourResourceModel extends Model 
@@ -164,8 +164,8 @@ This trait enables the package's dynamic form storage and retrieval mechanism.
 You can use this schema or customize as per your need:
 
 ```php
-use Quickform\Formbuilder\Models\FormTypes;
-use Quickform\Formbuilder\Filament\Resources\Schemas\DynamicFormBuilder;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Filament\Resources\Schemas\DynamicFormBuilder;
 
 public static function form(Form $form): Form
 {
@@ -221,7 +221,7 @@ public static function form(Form $form): Form
 If you want to utilize the validation capabilities of QuickForm, add the following to your resource:
 
 ```php
-use Quickform\Formbuilder\Filament\Resources\FormTypesResource;
+use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource;
 
 public static function form(Form $form): Form
 {
@@ -270,9 +270,9 @@ namespace App\Extensions;
 
 use Illuminate\Support\Str;
 use Filament\Forms\Components\Grid;
-use Quickform\Formbuilder\Filament\Components\Fields\FieldCreatorFactory;
-use Quickform\Formbuilder\Filament\Resources\Schemas\DynamicFormBuilder as VendorDynamicFormBuilder;
-use Quickform\Formbuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Filament\Components\Fields\FieldCreatorFactory;
+use FilamentQuickForm\FormBuilder\Filament\Resources\Schemas\DynamicFormBuilder as VendorDynamicFormBuilder;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
 
 class CustomDynamicFormBuilder extends VendorDynamicFormBuilder
 {
@@ -340,7 +340,7 @@ namespace App\Providers;
 
 use App\Extensions\CustomDynamicFormBuilder;
 use Illuminate\Support\ServiceProvider;
-use Quickform\Formbuilder\Filament\Resources\Schemas\DynamicFormBuilder;
+use FilamentQuickForm\FormBuilder\Filament\Resources\Schemas\DynamicFormBuilder;
 
 class FormBuilderServiceProvider extends ServiceProvider
 {

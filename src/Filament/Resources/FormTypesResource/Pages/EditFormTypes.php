@@ -1,8 +1,8 @@
 <?php
 
-namespace Quickform\Formbuilder\Filament\Resources\FormTypesResource\Pages;
+namespace FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\Pages;
 
-use Quickform\Formbuilder\Filament\Resources\FormTypesResource;
+use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
