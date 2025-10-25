@@ -31,9 +31,10 @@ Add the following to your project's `composer.json`:
 
 ```bash
 composer require quickform/formbuilder:dev-master
-php artisan vendor:publish --tag=config
-php artisan vendor:publish --tag=quickform-translations
-php artisan quickform:install
+php artisan vendor:publish --tag=filament-quick-form-migrations
+php artisan vendor:publish --tag=filament-quick-form-config
+php artisan vendor:publish --tag=filament-quick-form-translations
+php artisan filament-quick-form:install
 ```
 
 ### Step 3: Configuration Options
