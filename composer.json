@@ -1,22 +1,22 @@
 {
-    "name": "filament-quick-form/form-builder",
-    "description": "create customize forms with different fields",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "FilamentQuickForm\\FormBuilder\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "FilamentQuickForm\\FormBuilder\\FormBuilderServiceProvider"
-            ]
-        }
-    },
-    "require": {
-       "filament/filament": "^4.0",
-        "bensampo/laravel-enum": "^6.11"
+  "name": "filament-quick-form/form-builder",
+  "description": "create customize forms with different fields",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "FilamentQuickForm\\FormBuilder\\": "src/"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "FilamentQuickForm\\FormBuilder\\FormBuilderServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "filament/filament": "^3.2|^4.0",
+    "bensampo/laravel-enum": "^6.11"
+  }
 }
