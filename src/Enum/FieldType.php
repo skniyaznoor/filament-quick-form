@@ -5,7 +5,6 @@ namespace FilamentQuickForm\FormBuilder\Enum;
 use BenSampo\Enum\Enum;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Lang;
 
 final class FieldType extends Enum
 {
@@ -26,19 +25,19 @@ final class FieldType extends Enum
     public static function getLabelTypes(): array
     {
         return [
-            self::TEXT => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.text'),
-            self::TEXTAREA => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.textarea'),
-            self::RADIO => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.radio'),
-            self::CHECK => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.check'),
-            self::TOGGLE => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.toggle'),
-            self::DATE => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.date'),
-            self::DATETIME => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.datetime'),
-            self::TIME => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.time'),
-            self::NUMBER => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.number'),
-            self::SELECT => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.select'),
-            self::CHECKBOX => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.checkbox'),
-            self::COLORPICKER => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.colorpicker'),
-            self::FILEUPLOAD => __('filament-quick-form::formbuilder-filament-quick-form.formtypes.fields.types.fileupload'),
+            self::TEXT => __('filament-quick-form::form-builder.form-type.field.type.text'),
+            self::TEXTAREA => __('filament-quick-form::form-builder.form-type.field.type.textarea'),
+            self::RADIO => __('filament-quick-form::form-builder.form-type.field.type.radio'),
+            self::CHECK => __('filament-quick-form::form-builder.form-type.field.type.check'),
+            self::TOGGLE => __('filament-quick-form::form-builder.form-type.field.type.toggle'),
+            self::DATE => __('filament-quick-form::form-builder.form-type.field.type.date'),
+            self::DATETIME => __('filament-quick-form::form-builder.form-type.field.type.datetime'),
+            self::TIME => __('filament-quick-form::form-builder.form-type.field.type.time'),
+            self::NUMBER => __('filament-quick-form::form-builder.form-type.field.type.number'),
+            self::SELECT => __('filament-quick-form::form-builder.form-type.field.type.select'),
+            self::CHECKBOX => __('filament-quick-form::form-builder.form-type.field.type.checkbox'),
+            self::COLORPICKER => __('filament-quick-form::form-builder.form-type.field.type.colorpicker'),
+            self::FILEUPLOAD => __('filament-quick-form::form-builder.form-type.field.type.fileupload'),
         ];
     }
 

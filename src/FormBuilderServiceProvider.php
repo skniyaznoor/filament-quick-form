@@ -23,10 +23,10 @@ class FormBuilderServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
         $this->publishes([
             __DIR__ . '/../database/migrations' => database_path('migrations'),
-        ], 'formbuilder-migrations');
+        ], 'filament-quick-form-migrations');
         $this->publishes([
             __DIR__ . '/../config/filament-quick-form.php' => config_path('filament-quick-form.php'),
-        ], 'config');
+        ], 'filament-quick-form-config');
         $this->loadTranslationsFrom(
             __DIR__.'/../resources/lang', 
             'filament-quick-form' 
