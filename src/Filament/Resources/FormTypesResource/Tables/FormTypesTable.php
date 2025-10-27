@@ -1,6 +1,6 @@
 <?php
 
-namespace Quickform\Formbuilder\Filament\Resources\FormTypesResource\Tables;
+namespace FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -12,7 +12,7 @@ use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 use Filament\Actions\Action;
 use Illuminate\Database\Eloquent\Builder;
-use Quickform\Formbuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
 
 class FormTypesTable
 {
