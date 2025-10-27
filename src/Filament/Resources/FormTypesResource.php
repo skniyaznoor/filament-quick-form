@@ -1,10 +1,10 @@
 <?php
 namespace FilamentQuickForm\FormBuilder\Filament\Resources;
 
-use QuickForm\FormBuilder\Filament\Resources\FormTypesResource\Pages;
-use QuickForm\FormBuilder\Filament\Resources\FormTypesResource\Schemas\FormTypesForm;
-use QuickForm\FormBuilder\Filament\Resources\FormTypesResource\Tables\FormTypesTable;
-use QuickForm\FormBuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\Pages;
+use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\Schemas\FormTypesForm;
+use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\Tables\FormTypesTable;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
 use Filament\Resources\Resource;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Config;

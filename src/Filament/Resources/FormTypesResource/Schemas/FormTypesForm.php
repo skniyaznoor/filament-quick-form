@@ -1,10 +1,10 @@
 <?php
 
-namespace Quickform\Formbuilder\Filament\Resources\FormTypesResource\Schemas;
+namespace FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\Schemas;
 
-use Quickform\Formbuilder\Filament\Resources\FormTypesResource\Pages;
-use Quickform\Formbuilder\Filament\Resources\FormTypesResource\RelationManagers;
-use Quickform\Formbuilder\Models\FormTypes;
+use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\Pages;
+use FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\RelationManagers;
+use FilamentQuickForm\FormBuilder\Models\FormTypes;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -18,12 +18,12 @@ use Illuminate\Support\Facades\Hash;
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Forms\Components\{ KeyValue, TimePicker, DateTimePicker, DatePicker, Tabs, Button, Modal, Card, TextInput, Textarea, Radio, Repeater, Toggle, Select, Hidden};
-use Quickform\Formbuilder\Filament\Pages\Settings;
+use FilamentQuickForm\FormBuilder\Filament\Pages\Settings;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Filament\Forms\Set;
 use Filament\Forms\Contracts\HasForms;
-use Quickform\Formbuilder\Enum\FieldType;
+use FilamentQuickForm\FormBuilder\Enum\FieldType;
 use Filament\Support\Enums\Alignment;
 use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Support\Facades\Config;
@@ -34,7 +34,7 @@ class FormTypesForm
 {
     public static function getDefaultColor(): string
     {
-        return Config::get('quickform.default_color', 'warning');
+        return Config::get('filament-quick-form.default_color', 'warning');
     }
 
     public static function configure(Schema $form): Schema

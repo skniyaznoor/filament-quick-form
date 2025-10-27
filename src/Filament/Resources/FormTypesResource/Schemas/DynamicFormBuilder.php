@@ -1,14 +1,14 @@
 <?php
 
-namespace Quickform\Formbuilder\Filament\Resources\FormTypesResource\Schemas;
+namespace FilamentQuickForm\FormBuilder\Filament\Resources\FormTypesResource\Schemas;
 
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
-use Quickform\Formbuilder\Models\FormTypes; 
-use Quickform\Formbuilder\Filament\Components\Fields\FieldCreatorFactory;
+use FilamentQuickForm\FormBuilder\Models\FormTypes; 
+use FilamentQuickForm\FormBuilder\Filament\Components\Fields\FieldCreatorFactory;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
