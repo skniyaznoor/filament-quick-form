@@ -18,12 +18,12 @@ class FormTypesResource extends Resource
     
     public static function getLabel(): string
     {
-        return __('filament-quick-form::form-builder-filament-quick-form.config.resources.form_type.label');
+        return __('filament-quick-form::form-builder.config.resources.form_type.label');
     }
     
     public static function getPluralLabel(): string
     {
-        return __('filament-quick-form::form-builder-filament-quick-form.config.resources.form_type.plural_label');
+        return __('filament-quick-form::form-builder.config.resources.form_type.plural_label');
     }
     
     public static function form(Schema $schema): Schema
